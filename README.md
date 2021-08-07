@@ -11,4 +11,4 @@ This repository simplifies nerve-racking tasks in notion, e. g. creating recurri
 5. You are ready to go.
 
 ## Different Scripts
-- `recurring_events.py` - Adds a recurring event to a database of your choice. You choose the interval and how often the event recurs.
+- `recurring_entries.py` - Adds a recurring entry to a database of your choice. The only difference between the entries are the date properties. Specify the changing dae property, an interval and the number of iterations.
