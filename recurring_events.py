@@ -13,7 +13,7 @@ for i, database in enumerate(response.json()['results']):
     })
     print('{}: '.format(i), database['id'], database['title'][0]['text']['content'])
 
-database = databases[int(input('Index of database:'))]
+database = databases[int(input('Database index: '))]
 properties = {}
 date = ''
 for key, property in database['properties'].items():
@@ -45,7 +45,7 @@ for key, property in database['properties'].items():
         }
     elif property['type'] == 'number':
         properties[key] = {
-            'number': int(input('Enter your number: '))
+            'number': float(input('Enter your {}: '.format(key)))
         }
     elif property['type'] == 'multi_select':
         options = []
